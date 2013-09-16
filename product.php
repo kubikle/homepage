@@ -9,7 +9,8 @@ if($id > 0) {
 	$xmlstring = eregi_replace("(<[a-z]+ [^>]*>)([^\n<]+)", "\\1<data>\\2</data>", $xmlstring);
 	$xml = simplexml_load_string($xmlstring);
 	echo json_encode($xml);
-
+} else {
+	echo "{}";	
 }
 
 
