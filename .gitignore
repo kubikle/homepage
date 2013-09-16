@@ -1,0 +1,11 @@
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.classpath
+.project
+.settings/
+target
+.gitignore
+.idea
