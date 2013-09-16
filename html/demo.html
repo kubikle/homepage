@@ -1,7 +1,7 @@
 <div ng-repeat="product in model.products | orderBy:demo.releaseDate">
     <h3>{{product.demo.name}}</h3>
 
-    <iframe width="560" height="315" ng-src="{{trustSrc(product.youtube)}}" frameborder="0" allowfullscreen></iframe>
+    <iframe width="640" height="360" ng-src="{{trustSrc(product.youtube)}}" frameborder="0" allowfullscreen></iframe>
     <br />
-    <a href="http://www.pouet.net/prod.php?which={{'product.demo.@attributes.pouet_id'}}">Pouet</a>
+    <a href="http://www.pouet.net/prod.php?which={{product.demo['@attributes'].pouet_id}}">Pouet</a>
 </div>
