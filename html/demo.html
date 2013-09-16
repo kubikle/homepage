@@ -1,4 +1,4 @@
-<div ng-repeat="product in model.products">
+<div ng-repeat="product in model.products | orderBy:demo.releaseDate">
     <h3>{{product.demo.name}}</h3>
 
     <iframe width="560" height="315" ng-src="{{trustSrc(product.youtube)}}" frameborder="0" allowfullscreen></iframe>
