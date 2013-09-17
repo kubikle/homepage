@@ -4,7 +4,6 @@ var TEMPLATE_URL_BASE = 'html/';
 app.config(function($routeProvider) {
     $routeProvider.
         when('/demo/', {controller:DemoController, templateUrl:TEMPLATE_URL_BASE + 'demo.html'}).
-        when('/about/', {controller:AboutController, templateUrl:TEMPLATE_URL_BASE + 'about.html'}).
-        when('/contact/', {controller:ContactController, templateUrl:TEMPLATE_URL_BASE + 'contact.html'}).
+        when('/game/', {controller:GameController, templateUrl:TEMPLATE_URL_BASE + 'game.html'}).
         otherwise({redirectTo:'/demo/'});
 });

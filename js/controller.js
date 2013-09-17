@@ -7,11 +7,9 @@ function DemoController($scope, $location, $routeParams, $sce, DemoModel) {
     }
 }
 
-function AboutController($scope, $location, $routeParams) {
-
+function GameController($scope, $location, $routeParams) {
+    // Ei tätä tarvita
 }
 
-function ContactController($scope, $location, $routeParams) {
 
-}
 
