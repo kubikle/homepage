@@ -1,4 +1,4 @@
-<div ng-repeat="product in model.products | orderBy:demo.id">
+<div ng-repeat="product in model.products | orderBy:demo['@attributes'].pouet_id">
     <h3>{{product.demo.name}}</h3>
 
     <iframe width="640" height="360" ng-src="{{trustSrc(product.youtube)}}" frameborder="0" allowfullscreen></iframe>
